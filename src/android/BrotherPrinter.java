@@ -70,8 +70,8 @@ public class BrotherPrinter extends CordovaPlugin {
     private ImageFilePrint mFilePrint;
 
     private final static int PERMISSION_WRITE_EXTERNAL_STORAGE = 1;
-    private static final int PERMISSION_BLUETOOTH_12_REQUEST_CODE = 2;
-    private static final String[] PERMISSION_BLUETOOTH_12 = {Manifest.permission.BLUETOOTH_CONNECT, Manifest.permission.BLUETOOTH_SCAN};
+    // private static final int PERMISSION_BLUETOOTH_12_REQUEST_CODE = 2;
+    // private static final String[] PERMISSION_BLUETOOTH_12 = {Manifest.permission.BLUETOOTH_CONNECT, Manifest.permission.BLUETOOTH_SCAN};
 
     private boolean isPermitWriteStorage() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

@@ -637,15 +637,15 @@ public class BrotherPrinter extends CordovaPlugin {
 
         boolean alreadyHasPermission = true;
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {//Andro 12 and above
+        // if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {//Andro 12 and above
 
-            if (!cordova.hasPermission(Manifest.permission.BLUETOOTH_CONNECT) ||
-                    !cordova.hasPermission(Manifest.permission.BLUETOOTH_SCAN)) {
-                cordova.requestPermissions(this, PERMISSION_BLUETOOTH_12_REQUEST_CODE, PERMISSION_BLUETOOTH_12);
-                alreadyHasPermission = false;
-            }
+        //     if (!cordova.hasPermission(Manifest.permission.BLUETOOTH_CONNECT) ||
+        //             !cordova.hasPermission(Manifest.permission.BLUETOOTH_SCAN)) {
+        //         cordova.requestPermissions(this, PERMISSION_BLUETOOTH_12_REQUEST_CODE, PERMISSION_BLUETOOTH_12);
+        //         alreadyHasPermission = false;
+        //     }
 
-        }
+        // }
 
         return alreadyHasPermission;
     }
